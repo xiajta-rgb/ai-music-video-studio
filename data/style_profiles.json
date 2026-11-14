@@ -1,0 +1,57 @@
+{
+  "chinese-pentatonic": {
+    "name": "中国风 · 五声雅乐",
+    "mode": "宫商角徵羽 / 五声音阶",
+    "tempo": 112,
+    "scale": "D 宫调",
+    "scale_midi": [0, 2, 4, 7, 9],
+    "palette": ["#f4c978", "#4dd9ff", "#c57bff"],
+    "tags": ["五声音阶", "宫商角徵羽", "流动", "古城夜景"],
+    "captions": ["五声为骨，留白为气", "旋律像灯火沿街展开", "加入木管与弦乐回应", "回到宫音，留下余韵"],
+    "tracks": [
+      {"name": "主旋律", "instrument": "箫 / 长笛", "role": "melody", "color": "#62e6ff"},
+      {"name": "答句", "instrument": "二胡 / 小提琴", "role": "counter", "transpose": 12, "color": "#f4c978"},
+      {"name": "和声铺底", "instrument": "弦乐组", "role": "harmony", "transpose": 12, "color": "#9e8cff"},
+      {"name": "点彩", "instrument": "古筝 / 竖琴", "role": "harmony", "transpose": 24, "color": "#ff92e8"},
+      {"name": "低音根基", "instrument": "大提琴 / 埙", "role": "harmony", "transpose": 24, "color": "#78a8ff"},
+      {"name": "节拍", "instrument": "框鼓 / 沙锤", "role": "rhythm", "color": "#ff6d91"}
+    ]
+  },
+  "japanese-miyako": {
+    "name": "日本风 · 都节调式",
+    "mode": "都节 / 半音张力",
+    "tempo": 96,
+    "scale": "E 都节",
+    "scale_midi": [0, 1, 5, 7, 8],
+    "palette": ["#f6d4a0", "#e47dff", "#77d9ff"],
+    "tags": ["都节调式", "留白", "木琴", "夜雨"],
+    "captions": ["半音制造清冷的边缘", "短句像雨滴落在石阶", "木琴与弦乐形成空间", "用长音保留未说完的话"],
+    "tracks": [
+      {"name": "主旋律", "instrument": "尺八 / 女声垫", "role": "melody", "color": "#77d9ff"},
+      {"name": "应答", "instrument": "三味线 / 中提琴", "role": "counter", "transpose": 12, "color": "#f6d4a0"},
+      {"name": "和声铺底", "instrument": "弦乐组", "role": "harmony", "transpose": 12, "color": "#e47dff"},
+      {"name": "点彩", "instrument": "木琴 / 钟琴", "role": "harmony", "transpose": 24, "color": "#b5f3ff"},
+      {"name": "低音根基", "instrument": "低音提琴", "role": "harmony", "transpose": 24, "color": "#7a92d8"},
+      {"name": "节拍", "instrument": "和太鼓 / 竹铃", "role": "rhythm", "color": "#ff8c9e"}
+    ]
+  },
+  "fantasy-orchestral": {
+    "name": "幻想管弦 · 城市夜航",
+    "mode": "自然小调 + 借用和弦",
+    "tempo": 118,
+    "scale": "D 小调",
+    "scale_midi": [0, 2, 3, 5, 7, 8, 10],
+    "palette": ["#f8d77a", "#55e6ff", "#9a7bff"],
+    "tags": ["游戏配乐", "管弦乐", "飞行感", "夜景"],
+    "captions": ["先用高音建立方向感", "主题在木管之间接力", "铜管与低音扩大空间", "回到轻盈的主旋律"],
+    "tracks": [
+      {"name": "主旋律", "instrument": "长笛 / 双簧管", "role": "melody", "color": "#55e6ff"},
+      {"name": "英雄答句", "instrument": "小号 / 小提琴", "role": "counter", "transpose": 12, "color": "#f8d77a"},
+      {"name": "和声铺底", "instrument": "弦乐组", "role": "harmony", "transpose": 12, "color": "#9a7bff"},
+      {"name": "闪光层", "instrument": "竖琴 / 钢片琴", "role": "harmony", "transpose": 24, "color": "#ff94e9"},
+      {"name": "低音根基", "instrument": "大提琴 / 圆号", "role": "harmony", "transpose": 24, "color": "#7495e6"},
+      {"name": "节拍", "instrument": "定音鼓 / 铃鼓", "role": "rhythm", "color": "#ff718a"}
+    ]
+  }
+}
+
