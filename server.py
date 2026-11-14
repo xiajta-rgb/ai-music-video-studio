@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parent
 PUBLIC = ROOT / "public"
 DATA = ROOT / "data" / "style_profiles.json"
+TRACKLIST = ROOT / "data" / "qq_fantasy_tracklist.json"
 
 
 def load_profiles():
@@ -102,8 +103,18 @@ class Handler(BaseHTTPRequestHandler):
             return self._json({"ok": True, "service": "ai-music-video-studio"})
         if path == "/api/styles":
             return self._json(load_profiles())
+        if path == "/api/library":
+            return self._json(json.loads(TRACKLIST.read_text(encoding="utf-8")))
         if path.startswith("/api/"):
             return self._json({"error": "not found"}, 404)
+        if path == "/data/qq_fantasy_tracklist.json":
+            data = TRACKLIST.read_bytes()
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
         file_path = PUBLIC / ("index.html" if path == "/" else path.lstrip("/"))
         if not file_path.exists() or not file_path.is_file():
             return self._json({"error": "asset not found"}, 404)
