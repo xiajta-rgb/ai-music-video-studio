@@ -4,3 +4,6 @@ __pycache__/
 node_modules/
 .DS_Store
 .env
+private_media/qq-fantasy/*
+!private_media/qq-fantasy/README.md
+!private_media/qq-fantasy/.gitkeep

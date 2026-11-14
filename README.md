@@ -42,3 +42,9 @@ docs/video-reference.md   # 参考视频拆解和产品路线
 ## 许可
 
 代码采用 MIT License。`public/demo/` 中的原创草稿由本项目生成；参考视频只用于研究其公开的视觉与音乐可视化方法。
+
+## 原声资产与地图索引
+
+上一轮生成的原创“比翼城夜行曲”已归档在 `examples/original-biyi-city/`，试听版和可编辑 MIDI / MusicXML 仍在 `public/demo/`。
+
+《QQ自由幻想》地图音乐的 54 个章节名称和时长索引在 `data/qq_fantasy_tracklist.json`。官方音频没有放入仓库；如果你有合法取得的本地文件，可使用 `tools/import_tracks.py` 导入到被 Git 忽略的 `private_media/qq-fantasy/`。
